@@ -6,3 +6,27 @@ h1{
     text-align: center;
     font-weight: 900;
 }
+div{
+    background-color: beige;
+}
+img{
+    width: 80%;
+}
+div#left-container{
+    background-color: azure;
+    width: 15%;
+    left: 40px;
+    top: 40px;
+    position: absolute;
+    height: 100%;
+    padding: 20px;
+}
+div#right-container{
+    background-color: azure;
+    width: 15%;
+    right: 0px;
+    top: 40px;
+    position:absolute;
+    height: 100%;
+    padding: 20px;
+}
