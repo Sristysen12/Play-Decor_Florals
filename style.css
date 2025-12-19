@@ -13,7 +13,7 @@ img{
     width: 80%;
 }
 div#left-container{
-    background-color: azure;
+    /* background-color: azure; */
     width: 15%;
     left: 40px;
     top: 40px;
@@ -22,11 +22,56 @@ div#left-container{
     padding: 20px;
 }
 div#right-container{
-    background-color: azure;
+    /* background-color: azure; */
     width: 15%;
     right: 0px;
     top: 40px;
     position:absolute;
     height: 100%;
     padding: 20px;
+}
+.plant-holder{
+    position: relative;
+    height: 13%;
+    left: -10px;
+}
+.plant{
+    position: absolute;
+    max-width: 150%;
+    max-height: 150%;
+    z-index: 2;
+}
+div img{
+    width: 90px;
+}
+.jar-walls{
+    height: 80%;
+    width: 60%;
+    background: rgb(144, 247, 219);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 0.5%;
+    left: 21.4%;
+    opacity: 0.5;
+    z-index: 1;
+}
+.jar-bottom{
+    width: 50%;
+    height: 1%;
+    background: rgb(144, 247, 219) ;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    opacity: 0.7;
+}
+.dirt{
+    width: 60%;
+    height: 5%;
+    background: #3a3a3a;
+    position: absolute;
+    border-radius: 0 0 1rem 1rem;
+    bottom: 1%;
+    left: 20%;
+    opacity: 0.7;
+    z-index: -1;
 }
