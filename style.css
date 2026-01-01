@@ -1,19 +1,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow: hidden;
 }
 h1{
     color: rgb(6, 5, 98);
     text-align: center;
     font-weight: 900;
 }
-div{
+#page{
     background-color: beige;
+    min-height: 87vh;
 }
 img{
     width: 80%;
 }
-div#left-container{
+div#left-container {
     /* background-color: azure; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 15%;
     left: 40px;
     top: 40px;
@@ -22,36 +28,44 @@ div#left-container{
     padding: 20px;
 }
 div#right-container{
-    /* background-color: azure; */
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 15%;
-    right: 0px;
+    left: auto;
     top: 40px;
-    position:absolute;
+    position: absolute;
     height: 100%;
     padding: 20px;
 }
 .plant-holder{
     position: relative;
-    height: 13%;
+    height: 110px;
     left: -10px;
 }
 .plant{
     position: absolute;
-    max-width: 150%;
-    max-height: 150%;
+    max-width: 100%;
+    max-height: 100%;
     z-index: 2;
 }
-div img{
+.plant-holder img{
     width: 90px;
+    position: absolute;
+    max-width: 150%;
+    max-height: 150%;
+    /* z-index: 2; */
+    left: 12%;
 }
 .jar-walls{
     height: 80%;
-    width: 60%;
+    width: 90%;
     background: rgb(144, 247, 219);
     border-radius: 1rem;
     position: absolute;
     bottom: 0.5%;
-    left: 21.4%;
+    left: 1%;
     opacity: 0.5;
     z-index: 1;
 }
@@ -73,5 +87,12 @@ div img{
     bottom: 1%;
     left: 20%;
     opacity: 0.7;
-    z-index: -1;
+    z-index: 1;
+}
+#terrarium{
+    position: relative;
+    width: 55%;
+    height: 80vh;
+    margin: auto;
+    z-index: 0;
 }
